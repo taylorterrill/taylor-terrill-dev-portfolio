@@ -26,53 +26,35 @@ header nav ul li{
 
 /* styling for "about" section */
 
-aside {
-    
-    border-style: solid;
-    border-width: 1px;
-    margin: 2%;
-    height: 500px;
-    width: 480px;
-    align-items: center;
-}
-
-aside > * {
-    margin: 1%;
-    height: 475px;
-    
-}
-
 .about {
-    border-style: solid;
-    border-width: 1px;
-    margin: 2%;
-    align-items: center;
-    gap: 2rem;
-    max-height: 500px;
-    
-}
-
-.about > * {
     display: flex;
-    margin: 1%;  
+    flex: 1;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 1rem;
 }
 
 
-.about h1 {
-    
+aside > *{
+    margin: 1%;
+    height: 400px; 
 }
 
-.about p {
-    flex-shrink: 1;
+.about section {
+    min-width: 400px;
+    max-width: 650px;
 }
-
 
 
 /* styling for "work" container */
 .work {
     display: flex;
     flex: 1 0 0;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     margin-left: 9%;
     margin-right: 9%;
     justify-content:space-around;
@@ -81,7 +63,6 @@ aside > * {
 }
 
 .card {
-    
     padding: 10px;
     text-align:center;
     border-style: solid;
