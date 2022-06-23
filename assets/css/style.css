@@ -1,6 +1,8 @@
 :root {
     --beige: #FAEBD7;
+    --dark-beige: #fad5a1;
     --grey: #22323F;
+    --shadow: #aaaaaa;
 }
 
 *{
@@ -18,11 +20,14 @@
     padding-right: 0%;
     padding-left: 0%;
     background: var(--grey);
-    /* border-bottom: 10px; */
 }
 
 header h1{
     color: var(--beige);
+    background-color: var(--grey);
+}
+
+header nav {
     background-color: var(--grey);
 }
 
@@ -75,8 +80,8 @@ aside > *{
     margin-left: 9%;
     margin-right: 9%;
     justify-content:space-around;
-    padding: 60px;
-    gap: 3rem;
+    padding: 50px;
+    gap: 2rem;
 }
 
 .card {
@@ -84,12 +89,37 @@ aside > *{
     text-align:center;
     border-style: solid;
     border-width: 1px;
-    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px var(--shadow);
+    min-width: 40%;
+    font-weight: bold;
+    background-color: var(--dark-beige) 
+}    
+
+.card header {
+    background-color: var(--dark-beige)
 }
 
 .card img {
-    width: 100%;
-    min-width: 400px;
+       max-width: 95%;
+}
+
+.card img:hover {
+    filter: saturate(2);
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+
+
+@media all and (min-width: 800px) {
+    .card {
+        max-width: 40%;
+    }
+    #cardboard-club {
+        max-width: 60%;
+    }
+
 }
 
 
