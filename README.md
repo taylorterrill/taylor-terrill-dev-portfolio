@@ -1,5 +1,5 @@
 # Coding Bootcamp Challenge 2 - Portfolio
-## Version 1.0.0 
+## Version 1.1.0 
 ### Contributor: Taylor Terrill
 ### Date: 06/23/2022
 
